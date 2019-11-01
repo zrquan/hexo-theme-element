@@ -16,8 +16,7 @@ search:
   algolia_app_id: 
   algolia_api_key: 
   algolia_index_name: 
-  # azure
-  azure_service_name: 
+  # azure azure_service_name: 
   azure_index_name: 
   azure_query_key: 
 
@@ -47,10 +46,10 @@ valine:
 social:
 - name: feed
 	url: /atom.xml
-- name: email
-  url: 
+- name: mail
+  url: mailto:ashen0ne@163.com
 - name: github
-  url: https://github.com/artchen
+  url: https://github.com/zrquan
 - name: twitter
   url: 
 - name: google

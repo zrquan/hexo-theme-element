@@ -44,6 +44,30 @@
   color: lighten(@text-color, 3%);
   padding-bottom: 30px;
 
+  &>table {
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: normal;
+	border: none;
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 100%;
+	white-space: nowrap;
+	background-color: white;
+
+	td, th {
+      text-align: center;
+	  padding: 8px;
+	}
+	td {
+	  border-right: 1px solid #f8f8f8;
+      font-size: 12px;
+    }
+	thead th {
+      background: #F8F8F8;
+      color: #4FC3A1;
+    }
+  }
   a {
     color: darken(@accent-color, 2%);
 
@@ -173,6 +197,56 @@
     figure {
       font-size: 13px;
       line-height: 1.6em;
+    }
+	&>table {
+      display: block;
+      width: 100%;
+
+      thead, tbody, thead th {
+        display: block;
+      }
+      thead th:last-child {
+        border-bottom: none;
+      }
+      thead {
+        float: left;
+      }
+      tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+      }
+      td, th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 80px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+      }
+      thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+      }
+      tbody tr {
+        display: table-cell;
+      }
+      tbody tr {
+        background: none;
+      }
+      tr td:nth-child(odd) {
+        border-right: 1px solid #E6E4E4;
+      }
+      tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+      }
+      tbody td {
+        display: block;
+        text-align: center;
+      }
     }
   }
 }

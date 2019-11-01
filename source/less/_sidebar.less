@@ -46,6 +46,32 @@
 		  }
 	  }
   }
+
+    .shortcuts {
+		display: block;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 20px;
+		text-align: center;
+
+		.dark-btn {
+			display: inline-block;
+			width: 36px;
+			height: 36px;
+			margin: 0 5px;
+			padding: 0;
+			font-size: 13px;
+			cursor: pointer;
+
+			.icon {
+				line-height: 34px;
+				font-size: 14px;
+				margin: 0;
+				padding: 0;
+			}
+		}
+    }
 }
 
 .site-bio {
@@ -53,23 +79,41 @@
 	opacity: 0;
 	transform: translate3d(0px, -20px, 0px);
 	transition: all 0.24s ease;
+
+    .menu {
+        position: relative;
+        width: 100%;
+        
+        ul {
+			position: relative;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+
+			li {
+				margin-bottom: 10px;
+			}
+        }
+
+        .dark-btn {
+            display: block;
+            width: 50%;
+            margin-left: 25%;
+            font-size: 13px;
+            padding: 5px 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+    .section {
+        margin: 15px auto;
+    }
 	
 	&.show {
 		opacity: 1;
 		transform: translate3d(0px, 0px, 0px);
-	}
-	.window-nav {
-		width: 125px;
-		padding: 0px 0px 0px 15px;
-		text-align: left;
-	}
-	.shortcuts {
-		padding: 0px 5px;
-
-    .bk {
-      margin-bottom: 5px;
-    }
-    
 	}
 	.about-me {
 		padding: 12px 5px 15px 5px;
@@ -260,4 +304,3 @@
 		}
 	}
 }
-

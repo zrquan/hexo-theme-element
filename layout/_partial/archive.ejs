@@ -2,6 +2,9 @@
 	<% if (is_tag()) { %>
 		- <%= page.tag %> -
 	<% } %>
+	<% if (is_category()) { %>
+		~ <%= page.category %> ~
+	<% } %>
 
 </div>
 
