@@ -8,12 +8,12 @@
   margin-bottom: 20px;
   
   @media (max-width: @on-phone) {
-	  padding: 20px;
+    padding: 20px;
   }
   .article-header {
     padding: 20px 0px 40px 0;
 
-	  @media (max-width: @on-phone) {
+      @media (max-width: @on-phone) {
       padding: 0px 0px 40px 0;
     }
     
@@ -45,25 +45,26 @@
   padding-bottom: 30px;
 
   &>table {
-	border-radius: 5px;
-	font-size: 12px;
-	font-weight: normal;
-	border: none;
-	border-collapse: collapse;
-	width: 100%;
-	max-width: 100%;
-	white-space: nowrap;
-	background-color: white;
+    border-radius: 5px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
 
-	td, th {
+    td, th {
       text-align: center;
-	  padding: 8px;
-	}
-	td {
-	  border-right: 1px solid #f8f8f8;
-      font-size: 12px;
+      padding: 5px;
+      height: 40px;
     }
-	thead th {
+    td {
+      border: 1px solid #f8f8f8;
+    }
+    thead th {
       background: #F8F8F8;
       color: #4FC3A1;
     }
@@ -81,21 +82,21 @@
     }
   }
   h1, h2, h3, h4, h5, h6 {
-	  position: relative;
+    position: relative;
     font-family: @base-font-family;
     font-weight: bold;
     margin: 40px auto 30px auto;
     
     @media (max-width: @on-phone) {
-	    left: 15px;
+        left: 15px;
     }
     &::before {
-	    position: absolute;
-	    left: -20px;
-	    top: 0px;
-	    content: "#";
-	    color: @material-green;
-	    font-weight: normal;
+      position: absolute;
+      left: -20px;
+      top: 0px;
+      content: "#";
+      color: @material-green;
+      font-weight: normal;
     }
   }
   p {
@@ -125,9 +126,9 @@
     margin: 20px 0px 20px 0px;
     padding-left: 30px;
   }
-	ul {
-	  list-style: circle;
-	}
+    ul {
+      list-style: circle;
+    }
   img {
     display: block;
     border: none;
@@ -142,23 +143,23 @@
     border-left: 4px solid @material-green;
   }
   pre {
-	  white-space: pre;
-	  
-	  code {
-			color: @black;
-			padding: 0 0 0 30px;
-			margin: 0;
-			font-size: 1em;
-			background: transparent;
-			border: 0;
-			white-space: inherit;
-		}
-		figure {
-			margin: 0px;
-		}
+    white-space: pre;
+    
+    code {
+      color: @black;
+      padding: 0 0 0 30px;
+      margin: 0;
+      font-size: 1em;
+      background: transparent;
+      border: 0;
+      white-space: inherit;
+    }
+    figure {
+      margin: 0px;
+    }
   }
   code {
-	  color: darken(@brand-color, 2%);
+    color: darken(@brand-color, 2%);
     padding: 3px 5px;
     margin: 0px 2px;
     border-radius: 2px;
@@ -198,7 +199,7 @@
       font-size: 13px;
       line-height: 1.6em;
     }
-	&>table {
+    &>table {
       display: block;
       width: 100%;
 
@@ -217,18 +218,16 @@
         overflow-x: auto;
       }
       td, th {
-        padding: 20px .625em .625em .625em;
-        height: 60px;
+        padding: .625em;
+        height: 40px;
         vertical-align: middle;
         box-sizing: border-box;
         overflow-x: hidden;
         overflow-y: auto;
-        width: 80px;
-        font-size: 13px;
+        font-size: 14px;
         text-overflow: ellipsis;
       }
       thead th {
-        text-align: left;
         border-bottom: 1px solid #f7f7f9;
       }
       tbody tr {
@@ -252,27 +251,27 @@
 }
 
 .article-tags {
-	margin-bottom: 30px;
-	
-	.tag-link {
-		position: relative;
-		padding: 4px 10px 4px 20px;
-		margin-right: 5px;
-		font-size: 14px;
-		background: @background-color;
-		border-radius: 2px;
-		
-		&:hover {
-			background: @black;
-			color: white;
-		}
-		&::before {
-			position: absolute;
-			top: 0;
-			left: 7px;
-			content: "#";
-		}
-	}
+  margin-bottom: 30px;
+  
+  .tag-link {
+    position: relative;
+    padding: 4px 10px 4px 20px;
+    margin-right: 5px;
+    font-size: 14px;
+    background: @background-color;
+    border-radius: 2px;
+    
+    &:hover {
+      background: @black;
+      color: white;
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 7px;
+      content: "#";
+    }
+  }
 }
 
 /* Comments */
